@@ -59,10 +59,9 @@
 		C6FA664E29366DB900B07120 /* WatchStoreApp */ = {
 			isa = PBXGroup;
 			children = (
+				C6FA67042936A2F900B07120 /* Views */,
+				C6FA67032936A2C700B07120 /* App */,
 				C6FA66F6293683D900B07120 /* Utils */,
-				C6FA664F29366DB900B07120 /* WatchStoreAppApp.swift */,
-				C6FA665129366DB900B07120 /* ContentView.swift */,
-				C6FA66F4293682CC00B07120 /* WatchCard.swift */,
 				C6FA66FB2936A09F00B07120 /* Components */,
 				C6FA665329366DBB00B07120 /* Assets.xcassets */,
 				C6FA665529366DBB00B07120 /* Preview Content */,
@@ -93,6 +92,23 @@
 				C6FA66FC2936A0C600B07120 /* AddToBagButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		C6FA67032936A2C700B07120 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C6FA665129366DB900B07120 /* ContentView.swift */,
+				C6FA664F29366DB900B07120 /* WatchStoreAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C6FA67042936A2F900B07120 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6FA66F4293682CC00B07120 /* WatchCard.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
