@@ -13,6 +13,8 @@
 		C6FA665729366DBB00B07120 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6FA665629366DBB00B07120 /* Preview Assets.xcassets */; };
 		C6FA66F5293682CC00B07120 /* WatchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA66F4293682CC00B07120 /* WatchCard.swift */; };
 		C6FA66F82936842D00B07120 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA66F72936842D00B07120 /* Extensions.swift */; };
+		C6FA66FA29369FDC00B07120 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA66F929369FDC00B07120 /* FavoriteButton.swift */; };
+		C6FA66FD2936A0C600B07120 /* AddToBagButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FA66FC2936A0C600B07120 /* AddToBagButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		C6FA665629366DBB00B07120 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6FA66F4293682CC00B07120 /* WatchCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCard.swift; sourceTree = "<group>"; };
 		C6FA66F72936842D00B07120 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C6FA66F929369FDC00B07120 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		C6FA66FC2936A0C600B07120 /* AddToBagButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBagButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 				C6FA664F29366DB900B07120 /* WatchStoreAppApp.swift */,
 				C6FA665129366DB900B07120 /* ContentView.swift */,
 				C6FA66F4293682CC00B07120 /* WatchCard.swift */,
+				C6FA66FB2936A09F00B07120 /* Components */,
 				C6FA665329366DBB00B07120 /* Assets.xcassets */,
 				C6FA665529366DBB00B07120 /* Preview Content */,
 			);
@@ -79,6 +84,15 @@
 				C6FA66F72936842D00B07120 /* Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		C6FA66FB2936A09F00B07120 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C6FA66F929369FDC00B07120 /* FavoriteButton.swift */,
+				C6FA66FC2936A0C600B07120 /* AddToBagButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6FA66F5293682CC00B07120 /* WatchCard.swift in Sources */,
+				C6FA66FD2936A0C600B07120 /* AddToBagButton.swift in Sources */,
 				C6FA665229366DB900B07120 /* ContentView.swift in Sources */,
 				C6FA665029366DB900B07120 /* WatchStoreAppApp.swift in Sources */,
+				C6FA66FA29369FDC00B07120 /* FavoriteButton.swift in Sources */,
 				C6FA66F82936842D00B07120 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
