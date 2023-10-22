@@ -12,8 +12,15 @@ struct CartView: View {
                 .alignmentGuide(.listRowSeparatorLeading){ _ in 0 }
                 .background(Color.baseBackground)
             }
+            .safeAreaInset(edge: .bottom) {
+                cartTotals
+            }
             .scrollIndicators(.hidden)
             .listStyle(.plain)
+            .scrollContentBackground(.hidden)
+            .navigationTitle("My BAG")
+            .navigationBarTitleDisplayMode(.large)
+            .background(Color.baseBackground)
         }
     }
     
@@ -101,6 +108,10 @@ struct CartView: View {
             }
         }
         .frame(maxHeight: 280)
+    }
+    
+    var cartTotals: some View {
+        Text("Cart Total ")
     }
 }
 
