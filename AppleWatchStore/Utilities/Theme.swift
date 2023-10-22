@@ -12,17 +12,17 @@ struct CustomNavigationBar: ViewModifier {
         let appearance = UINavigationBarAppearance()
         appearance.titleTextAttributes = [
             .font : UIFont.systemFont(ofSize: 24, weight: .black, width: .condensed),
-            NSAttributedString.Key.foregroundColor : UIColor(Color(.baseText))
+            NSAttributedString.Key.foregroundColor : UIColor(.primary)
         ]
         
         appearance.backButtonAppearance.normal.titleTextAttributes = [
             .font : UIFont.systemFont(ofSize: 24, weight: .semibold, width: .condensed),
-            NSAttributedString.Key.foregroundColor : UIColor(Color(.baseText))
+            NSAttributedString.Key.foregroundColor :  UIColor(.primary)
         ]
         
         appearance.largeTitleTextAttributes = [
             .font : UIFont.systemFont(ofSize: 48, weight: .black, width: .condensed),
-            NSAttributedString.Key.foregroundColor : UIColor(Color(.baseText))
+            NSAttributedString.Key.foregroundColor :  UIColor(.primary)
         ]
         
         UINavigationBar.appearance().standardAppearance = appearance

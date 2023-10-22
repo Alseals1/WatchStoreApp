@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct SectionHeader: View {
+    var title: String
+    var icon: String = ""
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 0){
+            HStack {
+                Text(title)
+                    .condensedLowercased(.bold, size: 24)
+                
+                Spacer()
+                if icon.isNotEmpty { Image(systemName: icon) }
+            }
+
+            Divider()
+        }
     }
 }
 
 #Preview {
-    SectionHeader()
+    VStack {
+        SectionHeader(title: "Popular")
+        SectionHeader(title: "Popular", icon: "slider.horizontal.3")
+    }
 }

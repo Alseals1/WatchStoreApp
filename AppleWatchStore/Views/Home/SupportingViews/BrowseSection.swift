@@ -9,7 +9,22 @@ import SwiftUI
 
 struct BrowseSection: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 30) {
+            SectionHeader(title: "Browse By Model")
+                .padding(.horizontal)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(0..<4) { _ in
+                            CardView()
+                            .frame(width: UIScreen.main.bounds.width - 30)
+                            .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: .infinity)
+                    }
+                }
+            }
+            .safeAreaPadding(.horizontal, 10)
+            .scrollTargetBehavior(.paging)
+        }
     }
 }
 

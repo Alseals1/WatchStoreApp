@@ -9,10 +9,23 @@ import SwiftUI
 
 struct PopularSection: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        SectionHeader(title: "Popular", icon: "slider.horizontal.3")
+            .padding(.horizontal)
+        
+        LazyVGrid(columns: Constants.columns, spacing: 20) {
+            ForEach(0..<4) { _ in
+                NavigationLink {} label: {
+                    GridProductItem()
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        
     }
 }
 
 #Preview {
-    PopularSection()
+    NavigationStack {
+        PopularSection()
+    }
 }

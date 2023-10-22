@@ -9,7 +9,23 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ScrollView {
+                content
+            }
+            .navigationTitle("WELCOME")
+            .navigationBarTitleDisplayMode(.large)
+            .background(Color(.baseBackground))
+        }
+        
+    }
+    
+    var content: some View {
+        VStack {
+            BrowseSection()
+            PopularSection()
+            CategorySection()
+        }
     }
 }
 

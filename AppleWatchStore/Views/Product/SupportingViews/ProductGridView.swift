@@ -9,10 +9,22 @@ import SwiftUI
 
 struct ProductGridView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            LazyVGrid(columns: Constants.columns, spacing: 16) {
+                ForEach(0 ..< 12) { item in
+                NavigationLink{} label: {
+                        GridProductItem()
+                    }
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .padding(.top, 2)
     }
 }
 
 #Preview {
-    ProductGridView()
+    NavigationStack{
+        ProductGridView()
+    }
 }

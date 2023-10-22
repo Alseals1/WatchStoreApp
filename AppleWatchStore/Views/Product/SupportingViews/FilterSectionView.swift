@@ -9,7 +9,31 @@ import SwiftUI
 
 struct FilterSectionView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            SectionHeader(title: "Section Header Here")
+            
+            LazyVGrid(columns: Constants.filterColumn, spacing: 10) {
+                ForEach(0 ..< 6) { item in
+                    sectionItem
+                }
+            }
+        }
+        .padding(.horizontal)
+    }
+    
+    var sectionItem: some View {
+        HStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 4)
+                    .frame(width: 24, height: 24)
+                Image(.checkmark)
+            }
+            
+            Text("Title Goes Here")
+                .condensed(.regular, size: 16)
+            
+            Spacer()
+        }
     }
 }
 

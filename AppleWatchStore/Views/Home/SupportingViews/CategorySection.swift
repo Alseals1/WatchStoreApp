@@ -9,7 +9,17 @@ import SwiftUI
 
 struct CategorySection: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 20) {
+            SectionHeader(title: "Watch Accessories")
+                .padding(.horizontal)
+            
+            VStack {
+                ForEach(0 ..< 5) { _ in
+                    CategoryListItem()
+                }
+            }
+            
+        }
     }
 }
 
